@@ -4,13 +4,13 @@ class Solution {
     
     long long int solve(int S[], int m, int n,vector<vector<long long int>>& dp){
         // base condition
-        if(m==-1 && n>0){// means array size khatm ho gyi and n 0 nhi hua
+        if(m==-1 && n>0){
             return 0;
         }
-        if(n == 0){// mtlb bich me hi kahi possible combination ban gya
+        if(n == 0){
             return 1;
         }
-        if(n<0){// means n -nme h chala gya toh vconsider nhi krenge
+        if(n<0){
             return 0;
         }
         //memoized step
