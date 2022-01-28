@@ -13,7 +13,7 @@ int helper(int i,int j,vector<vector<char>> &mat,vector<vector<int>> &dp){
             return 0;
         }
         if(dp[i][j]!=-1)return dp[i][j];
-  return dp[i][j]=1+min({helper(i+1,j,mat,dp),helper(i+1,j+1,mat,dp),helper(i,j+1,mat,dp)});
+        return dp[i][j]=1+min({helper(i+1,j,mat,dp),helper(i+1,j+1,mat,dp),helper(i,j+1,mat,dp)});
 }
     int maximalSquare(vector<vector<char>>& matrix) {
         int mx=0;
